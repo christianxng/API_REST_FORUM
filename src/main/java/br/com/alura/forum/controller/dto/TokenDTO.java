@@ -1,26 +1,21 @@
 package br.com.alura.forum.controller.dto;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
+public class TokenDto {
 
-public class TokenDTO {
+	private String token;
+	private String tipo;
 
-    @JsonProperty
-    private String token;
-    @JsonProperty
-    private String tipo;
+	public TokenDto(String token, String tipo) {
+		this.token = token;
+		this.tipo = tipo;
+	}
 
-    public TokenDTO(String token, String tipo) {
-        this.token = token;
-        this.tipo = tipo;
-    }
+	public String getToken() {
+		return token;
+	}
 
-    public String getToken() {
-        return token;
-    }
-
-    public String getTipo() {
-        return tipo;
-    }
-
+	public String getTipo() {
+		return tipo;
+	}
 
 }
