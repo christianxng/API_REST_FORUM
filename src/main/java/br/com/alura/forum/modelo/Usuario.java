@@ -44,6 +44,7 @@ public class Usuario implements UserDetails {
 		return true;
 	}
 
+
 	public Long getId() {
 		return id;
 	}
